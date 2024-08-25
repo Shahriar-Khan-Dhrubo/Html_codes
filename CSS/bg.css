@@ -1,0 +1,7 @@
+body{
+    /* background: white url(itachi.jpg) no-repeat;
+    background-size: 100% 100%; */
+    background: radial-gradient(circle,aqua,rgb(3, 91, 91),red,blue,green);
+    font-size: 5rem;
+    text-align: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Positioning , Overflow & Tooltip</title>
+    <style>
+        .static {
+            border: 3px solid green;
+            padding: 5px;
+            position: static;
+            width: 300px;
+            height: 200px;
+            margin-left: 200px;
+            overflow: auto;
+        }
+
+        .relative {
+            border: 2px solid red;
+            width: 600px;
+            height: 400px;
+            padding: 5px;
+            position: relative;
+            top: 10px;
+            left: 200px;
+        }
+
+        .absolute {
+            border: 2px solid black;
+            position: absolute;
+            left: 500px;
+            top: 450px;
+        }
+
+        .fixed {
+            border: 2px solid blue;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            padding: 2px;
+            background-color: aqua;
+        }
+        .tooltip .tool{
+            width: 50px;
+            height: 30px;
+            background-color: red;
+            color: blue;
+            text-align: center;
+            padding: 5px;
+            position: relative;
+            left: 50%;
+            top: 20px;
+        }
+        .tooltip .tool .tip{
+            position: absolute;
+            border: 2px solid white;
+            border-radius: 2px;
+            background-color: blueviolet;
+            color: white;
+            visibility: hidden;
+        }
+        .tooltip .tool:hover .tip{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem dolore, excepturi soluta voluptas libero
+        necessitatibus delectus magni aliquid temporibus dolorem sapiente odit aperiam vitae tempora sit facilis,
+        consequuntur, explicabo qui. Commodi, modi rem ullam vel ab architecto impedit dolorum blanditiis ipsum
+        repudiandae qui. Veritatis tenetur possimus aliquam quae nostrum amet, dicta impedit necessitatibus
+        reprehenderit ex est porro quo accusamus sed asperiores numquam eveniet itaque beatae illum odit nobis facilis.
+    </div>
+    <div class="relative">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus natus nisi eveniet ad quia voluptate, magni,
+        magnam, maxime exercitationem harum incidunt repellat optio doloremque porro perspiciatis ab ratione quibusdam.
+        Provident harum similique id repudiandae, illum illo quibusdam ab maxime molestias voluptate blanditiis pariatur
+        saepe, repellendus porro nostrum quis quos minus.
+    </div>
+    <div class="absolute">
+        Hi Bangladesh
+    </div>
+    <div class="fixed">
+        <a href="#" class="a">Facebook</a>    
+    </div>
+    <div class="tooltip">
+        <a href="#" class="tool">AVA <span class="tip">I Love Her So Much</span></a>
+    </div><br>
+    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi quia rem aut
+        impedit, porro, explicabo veritatis facere, fugit culpa neque et! Ab, laudantium, officia provident accusantium
+        qui non consectetur beatae culpa impedit nostrum asperiores magnam commodi quidem! Exercitationem eum magni enim
+        aliquid quidem aliquam voluptatibus architecto, molestiae dolor temporibus natus nam nobis maiores fugiat
+        cupiditate repellendus hic? Culpa laborum ipsum et sapiente blanditiis quae, ducimus sunt dolorum. Blanditiis
+        rerum quam facilis illum amet ad aliquam ipsa quibusdam ea officiis perferendis asperiores totam reiciendis
+        suscipit enim, eaque fugit ipsum quasi impedit rem magnam delectus. Rem consequuntur fugit quas maxime,
+        repellendus voluptatem repellat quo. Cumque tempore id molestiae accusamus fugit tempora, aliquid, adipisci
+        reprehenderit fugiat dolorem saepe debitis iste corporis natus blanditiis alias quis ad eos hic libero
+        necessitatibus non minima? Sequi itaque numquam quos aliquam deserunt, repellat ullam ab ex, inventore tenetur
+        earum quibusdam commodi adipisci perspiciatis ut quaerat cupiditate dicta illum placeat, quia minus consequatur.
+        Tenetur voluptatum ea culpa. Magnam, maxime quos nesciunt labore accusantium sequi at in expedita alias
+        veritatis quibusdam ex aliquam deserunt vel rem repellendus sunt totam quam eum nostrum sit nisi voluptas. Rem
+        eveniet eaque similique eius quaerat, vel dignissimos aut reiciendis doloribus nemo, minima a provident.
+        Officiis nobis, saepe minus quae magni, eos magnam fugit suscipit soluta ratione earum cum iusto placeat dolore
+        quaerat perferendis vitae a praesentium consequatur qui quisquam molestiae, iste odit? In, adipisci earum
+        reiciendis incidunt autem dolorum iusto soluta ab commodi enim ad sapiente voluptate at quisquam, eos labore,
+        libero nemo quidem culpa animi nihil qui eaque beatae? Distinctio expedita rem repudiandae veritatis temporibus
+        omnis totam quia autem doloribus modi aspernatur minus harum illo, quaerat neque adipisci debitis consectetur
+        unde quidem ab. Est maiores facilis debitis consectetur, enim voluptates eum a asperiores laboriosam vero natus
+        molestiae fugit totam minus dolorum soluta recusandae vel sit, ipsa quas excepturi. Ratione illo quo laboriosam
+        rem doloremque. Excepturi, provident dolores voluptatum doloremque dolorum iure quae natus autem suscipit sint
+        ex mollitia dignissimos sit nesciunt voluptatem accusantium ea commodi inventore! Beatae corrupti veniam,
+        nostrum nobis cupiditate explicabo a quas incidunt ullam. Id nisi quidem fugiat vel a labore sed quaerat cumque
+        provident. Doloribus debitis sequi quasi pariatur soluta, hic suscipit necessitatibus dignissimos, deserunt in
+        velit distinctio aliquid vero accusantium voluptas sunt minima labore recusandae! A sunt, exercitationem,
+        eveniet nesciunt sit modi quidem quaerat ratione natus doloribus consequatur eos ipsum alias nobis corporis
+        dignissimos voluptatibus ducimus. consectetur adipisicing elit. Architecto quibusdam, dignissimos, harum
+        nesciunt obcaecati repudiandae eveniet debitis facilis sed soluta molestiae error illo delectus dolorem.
+        Similique, blanditiis, placeat reprehenderit aliquam animi facilis suscipit laborum facere rerum vel veritatis
+        possimus aut ea soluta repudiandae? Voluptatibus voluptatum saepe dicta consectetur obcaecati praesentium
+        aliquam voluptas perspiciatis, iusto corporis veniam qui dolorem, quaerat alias nostrum at distinctio sunt.
+        Numquam architecto, nobis magni quod commodi dolores minus quibusdam nihil cupiditate! Maxime quos recusandae
+        ab, autem corrupti architecto ullam non quibusdam nostrum, facilis fugiat porro possimus distinctio similique
+        sed, sequi obcaecati excepturi. Id quaerat cupiditate repudiandae velit nihil repellendus quibusdam doloremque
+        harum tempore libero est, error qui, dolor alias consequatur blanditiis ipsam nostrum! Accusantium tempora error
+        reiciendis quidem, voluptate vitae nulla in nesciunt explicabo excepturi temporibus eius, amet veritatis quam
+        incidunt magnam ullam ipsum? Omnis repudiandae, explicabo, pariatur aut eligendi velit, optio a asperiores fuga
+        similique iure eveniet cum fugit voluptatem dolore nihil ad! Mollitia dignissimos obcaecati corrupti provident
+        blanditiis, repellat excepturi officiis et nisi ratione illum, quisquam quis labore harum illo hic fugit earum.
+        Fugiat maiores sint eos excepturi, libero repellat ut nisi porro? Commodi, soluta aliquam. Rem harum vitae amet
+        corrupti ipsa fuga cupiditate.</p>
+</body>
+
+</html>

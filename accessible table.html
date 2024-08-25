@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Table</title>
+    <style>
+        table{
+            width:500px;
+            height:300px;
+            margin:20px auto;
+            border:2px solid green;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:20px;
+            border:2px solid green;
+            text-align: center;
+            color: yellowgreen;
+        }
+        caption{
+            margin:20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">HTML Table</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Students Info</caption>
+            <colgroup>
+                <col span="3" style="background-color: gray">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>73</td>
+                    <td>Dhrubo</td>
+                    <td>2.83</td>
+                </tr>
+                <tr>
+                    <td>71</td>
+                    <td>Foysal</td>
+                    <td>2.90</td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td>Jibon</td>
+                    <td>2.81</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

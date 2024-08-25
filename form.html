@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Html</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid green;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend style="text-align: center;">Personal Information</legend>
+            <div>
+                <label for="firstname">First Name :</label>
+                <input type="text" name="firstname" id="firstname" required>
+            </div><br>
+            <div>
+                <label for="lastname">Last Name :</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div><br>
+            <div>
+                <label for="dob">Date Of Birth :</label>
+                <input type="date" name="dob" id="dob" required>
+            </div><br>
+            <div>
+                <label for="male">Gender :</label>
+                <input type="radio" name="gender" id="male" value="male"> Male 
+                <input type="radio" name="gender" id="female" value="female"> Female
+                <input type="radio" name="gender" id="other" value="others"> Others
+            </div><br>
+            <div>
+                <label for="muslim">Religion :</label>
+                <input type="checkbox" name="religion" id="muslim" value="muslim"> Muslim
+                <input type="checkbox" name="religion" id="hindu" value="hindu"> Hindu
+                <input type="checkbox" name="religion" id="other-religion" value="others"> Others
+            </div><br>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required>
+            </div><br>
+            <div>
+                <label for="photo">Choose Your Photo :</label>
+                <input type="file" name="photo" id="photo" required>
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label for="department">Department :</label>
+            <select name="department" id="department">
+                <option value="cse">CSE</option>
+                <option value="ce" selected>CE</option>
+                <option value="eee">EEE</option>
+                <option value="me">ME</option>
+            </select>
+        </div>
+        <div>
+            <br>
+            <label for="message">Message :</label><br>
+            <textarea cols="60" rows="10" name="message" id="message"></textarea><br>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+</body>
+</html>

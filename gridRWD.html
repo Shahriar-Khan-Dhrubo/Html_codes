@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Using Grid</title>
+    <link rel="icon" href="Images/favicon-16x16.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+            margin: 0;
+        }
+        .heading {
+            background-color: #FF7E51;
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            background-color: #39A2AC;
+        }
+
+        [class*=col-] {
+            float: left;
+            width:100%;
+        }
+
+        .menu a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .core {
+            background-color: #42DFD1;
+            padding: 5px;
+        }
+
+        .core p {
+            text-align: justify;
+            padding: 5px;
+        }
+
+        .aside {
+            background-color: #39A2AC;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .clear {
+            content: '';
+            clear: both;
+        }
+
+        
+        @media screen and (min-width:600px) {
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:900px) {
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Muammar Shahriar Khan Dhrubo</h1>
+    </div>
+    <div class="menu col-s-3 col-2 ">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+    </div>
+    <div class="core col-s-9 col-7 ">
+        <h2>I am a Web Developer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sunt qui assumenda enim ex eius
+            dicta blanditiis commodi omnis.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, repudiandae beatae autem sunt laborum,
+            impedit quasi nobis id numquam magnam nam iusto ad nemo, hic dolores earum doloribus. Asperiores, dolores.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores distinctio voluptatem quasi accusamus
+            dolore magni voluptatum vitae molestiae beatae, libero ex quaerat repellat atque enim animi iusto nostrum ea
+            corporis sapiente itaque consequatur voluptatibus. Hic repellendus ullam delectus cum corporis fugit,
+            tenetur odit itaque ipsam maiores quibusdam, suscipit voluptate ratione? Delectus cum explicabo porro
+            dolores quaerat magni, expedita natus! Totam fuga necessitatibus deserunt neque unde itaque repudiandae
+            amet. Cupiditate cum maiores dolorem iste consectetur quisquam commodi provident et, facere blanditiis,
+            suscipit nisi rerum placeat iusto sit qui ea quibusdam neque perferendis ipsam accusamus, adipisci sint quas
+            iure! Officiis vel pariatur id expedita, saepe nam totam aspernatur, unde nobis quibusdam delectus veritatis
+            cumque doloribus eveniet non aliquam dolorum quis deleniti incidunt quaerat ratione quidem? Autem, eum,
+            veritatis quos veniam hic eius temporibus neque repellendus maxime illum, similique deleniti nesciunt amet
+            quisquam cupiditate. Quasi numquam distinctio libero ipsa autem, officiis ab commodi placeat sint omnis
+            optio error atque architecto ad. Saepe id corporis animi illo pariatur. Nostrum et voluptatibus illum
+            tempora voluptates adipisci labore, doloribus ab consequatur id earum nobis enim quasi commodi quae quisquam
+            explicabo sint eligendi porro nisi incidunt aliquid, magnam eum? Est accusamus, doloribus iure veritatis
+            modi nobis.
+        </p>
+    </div>
+    <div class="aside col-s-12 col-3">
+        <h3>What I love ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam dolor eligendi possimus
+            asperiores molestias dignissimos iure sed vitae quasi.
+        </p>
+        <h3>What I don't love ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam dolor eligendi possimus
+            asperiores molestias dignissimos iure sed vitae quasi.
+        </p>
+        <h3>What I do ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam dolor eligendi possimus
+            asperiores molestias dignissimos iure sed vitae quasi.
+        </p>
+        <h3>What I don't do ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam dolor eligendi possimus
+            asperiores molestias dignissimos iure sed vitae quasi.
+        </p>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <p>&copy;MSK Dhrubo 2024 Developed By Dhrubo</p>
+    </div>
+</body>
+
+</html>

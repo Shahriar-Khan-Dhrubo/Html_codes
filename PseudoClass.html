@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Elements</title>
+    <style>
+        .demo p:nth-child(3) {
+            background-color: pink;
+            color: blue;
+        }
+
+        p::first-letter {
+            color: brown;
+            font-size: 2rem;
+        }
+
+        .demo li:nth-child(2n+1) {
+            background-color: aqua;
+            color: green;
+            width: 150px;
+        }
+
+        div.demo::before,
+        div.demo::after {
+            content: '';
+            height: 20px;
+            background-color: purple;
+            display: block;
+        }
+
+        ul.demo::before,
+        ul.demo::after {
+            content: '';
+            display: block;
+            height: 20px;
+            background-color: tomato;
+            margin-left: -40px;
+        }
+        input::placeholder{
+            color: aqua;
+        }
+        input:hover{
+            color: orange;
+            background-color: pink;
+        }
+        input:focus{
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi qui doloribus unde cum non dolore?
+            Eveniet dolor doloremque veritatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias perspiciatis dicta nam ea sequi.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ratione vitae accusantium. Atque autem
+            cum officiis veniam. Omnis possimus, quam numquam, veniam sapiente explicabo, rem dolorem nemo labore
+            consequatur dignissimos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ipsa.</p>
+    </div>
+    <ul class="demo">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+        <li>List5</li>
+    </ul>
+    <form action="">
+        <label for="">Name : </label><input type="text" required pattern="[a-zA-Z0-9]+" placeholder="Enter your name"><br><br>
+        <label for="">Password</label><input type="password" required pattern="[0-9]+" placeholder="Enter your password"><br>
+    </form>
+</body>
+
+</html>

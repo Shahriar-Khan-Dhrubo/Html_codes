@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <link rel="icon" href="Images/favicon-16x16.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            /* background-color: brown; */
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas:
+                'h'
+                'm'
+                'm'
+                'm'
+                'f'
+            ;
+        }
+
+        header {
+            grid-area: h;
+            background-color: pink;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        main {
+            grid-area: m;
+            background-color: blueviolet;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+
+        footer {
+            grid-area: f;
+            background-color: aquamarine;
+            width: 100%;
+            display: grid;
+            /* border: 1px solid black; */
+            grid-template-areas:
+                'n1 n2'
+            ;
+        }
+
+        article {
+            display: grid;
+            border: 1px solid black;
+            grid-template-areas:
+                's1 a1'
+                's2 a2'
+                's3 .'
+            ;
+            height: 100%;
+        }
+
+        section,
+        aside {
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        nav {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sec1 {
+            grid-area: s1;
+        }
+
+        #sec2 {
+            grid-area: s2;
+        }
+
+        #sec3 {
+            grid-area: s3;
+        }
+
+        #aside1 {
+            grid-area: a1;
+        }
+
+        #aside2 {
+            grid-area: a2;
+        }
+
+        #nav1 {
+            grid-area: n1;
+        }
+
+        #nav2 {
+            grid-area: n2;
+        }
+
+        @media screen and (max-width: 600px) {
+            footer {
+                grid-template-areas:
+                    'n1'
+                    'n2'
+                ;
+            }
+            article{
+                grid-template-areas: 
+                's1'
+                's2'
+                's3'
+                'a1'
+                'a2'
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>Header Nav</nav>
+    </header>
+    <main>
+        <article>
+            <section id="sec1">Section 1</section>
+            <section id="sec2">Section 2</section>
+            <section id="sec3">Section 3</section>
+            <aside id="aside1">Aside 1</aside>
+            <aside id="aside2">Aside 2</aside>
+        </article>
+    </main>
+    <footer>
+        <nav id="nav1">Nav 1</nav>
+        <nav id="nav2">Nav 2</nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Practice</title>
+    <style>
+      table {
+        width: 500px;
+        height: 270px;
+        border: 2px solid black;
+        margin: 40px auto;
+        border-collapse: collapse;
+      }
+      th{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: darkgreen;
+      }
+      td {
+        color: red;
+        text-align: center;
+        border: 2px solid black;
+      }
+      caption{
+        margin:20px;
+        color: purple;
+        font-size: 30px;
+      }
+      tr:nth-child(even){
+        background-color: gray;
+      }
+      tr:nth-child(odd)
+      {
+        background-color: gold;
+      }
+      tr:hover{
+        background-color: tomato;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        Practice
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dhrubo</td>
+          <td>01791201477</td>
+          <td>01626618329</td>
+        </tr>
+        <tr>
+          <td>Ava</td>
+          <td>01703427689</td>
+          <td>01718030859</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Home</td>
+            <td>051-62953</td>
+            <td>02-62953</td>
+        </tr>
+        <tr>
+            <td>01710723444</td>
+            <td>01725882476</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

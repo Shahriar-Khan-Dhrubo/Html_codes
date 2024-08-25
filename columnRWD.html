@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Column</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            /* width: 25%;
+            float: left; */
+            flex: 25%;
+            padding: 10px;
+        }
+        @media screen and (max-width:600px) {
+            .column{
+                /* width: 50%; */
+            }
+            .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur facilis quaerat qui atque nisi
+                dolore laboriosam voluptatum fuga non enim, voluptate asperiores voluptates eveniet perspiciatis cum, in
+                suscipit hic.</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur facilis quaerat qui atque nisi
+                dolore laboriosam voluptatum fuga non enim, voluptate asperiores voluptates eveniet perspiciatis cum, in
+                suscipit hic.</p>
+        </div>
+        <div class="column">
+            <h1>JS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur facilis quaerat qui atque nisi
+                dolore laboriosam voluptatum fuga non enim, voluptate asperiores voluptates eveniet perspiciatis cum, in
+                suscipit hic.</p>
+        </div>
+        <div class="column">
+            <h1>Python</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur facilis quaerat qui atque nisi
+                dolore laboriosam voluptatum fuga non enim, voluptate asperiores voluptates eveniet perspiciatis cum, in
+                suscipit hic.</p>
+        </div>
+    </div>
+</body>
+
+</html>
